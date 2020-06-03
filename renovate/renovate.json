@@ -1,4 +1,6 @@
 {
+  "autodiscover": "true",
+  "autodiscoverFilter": "adusumillipraveen/",
   "regexManagers": [
     {
       "fileMatch": ["\\Chart.yaml|requirements.yaml$"],
