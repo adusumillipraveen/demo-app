@@ -58,8 +58,8 @@ jobs:
             CHART_PATH=$(find charts -type f -iname "Chart.yaml")
             CHART_VERSION=$(yq r $CHART_PATH 'version')
             NEW_VERSION=$(echo $CHART_VERSION | awk -F. '{$NF = $NF + 1;} 1' | sed 's/ /./g' )
+            chmod +x $CHART_PATH
             yq w -i $CHART_PATH version $NEW_VERSION
-            git diff
             git config --global user.name 'Your Name'
             git config --global user.email 'your-username@users.noreply.github.com'
             git commit -am "Bumping chart version"
