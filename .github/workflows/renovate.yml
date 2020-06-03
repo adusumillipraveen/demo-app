@@ -56,6 +56,7 @@ jobs:
             CHART_PATH=$(find charts -type f -iname "Chart.yaml")
             CHART_VERSION=$(yq r $CHART_PATH 'version')
             NEW_VERSION=$(echo $CHART_VERSION | awk -F. '{$NF = $NF + 1;} 1' | sed 's/ /./g' )
+            git diff
             yq w -i $CHART_PATH version $NEW_VERSION
             git config --global user.name 'Your Name'
             git config --global user.email 'your-username@users.noreply.github.com'
