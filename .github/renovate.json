@@ -4,9 +4,7 @@
       "enabled": true,
       "fileMatch": ["\\Chart.yaml|requirements.yaml$"]
     },
-  "aliases": [
-    {
-      "hmctspublic" : "https://hmctspublic.azurecr.io/helm/v1/repo/"
-    }
-    ]
+  "aliases": {
+    "hmctspublic": "https://hmctspublic.azurecr.io/helm/v1/repo/"
+  }
 }
