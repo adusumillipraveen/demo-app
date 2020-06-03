@@ -12,10 +12,8 @@ jobs:
         uses: actions/checkout@v2.2.0
       - name: Bump Helm dependency charts
         run: |
-          
           set +e
           sudo snap install yq
-          curl -sL https://github.com/mikefarah/yq/releases/download/3.1.0/yq_linux_amd64 -o /usr/local/bin/yq && chmod +x /usr/local/bin/yq
 
           git fetch origin master:master
           git diff origin/master charts/ | grep --quiet values.yaml
