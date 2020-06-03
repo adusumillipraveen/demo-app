@@ -1,10 +1,10 @@
 {
   "helm-requirements": 
     {
+      "aliases": {
+        "stable": "https://kubernetes-charts.storage.googleapis.com/"
+      },
       "enabled": true,
       "fileMatch": ["\\Chart.yaml|requirements.yaml$"]
     },
-  "aliases": {
-    "stable": "https://kubernetes-charts.storage.googleapis.com/"
-  }
 }
