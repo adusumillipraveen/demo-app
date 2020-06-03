@@ -12,6 +12,6 @@ dependencies:
     version: ~1.8.0
     repository: '@hmctspublic'
   - name: postgresql
-    version: 8.0.0
+    version: 8.6.4
     repository: '@stable'
 
