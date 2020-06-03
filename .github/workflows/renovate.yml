@@ -11,4 +11,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.2.0
       - name: Bump Helm dependency charts
-        uses: adusumillipraveen/chart-bump@0.0.2
+        uses: adusumillipraveen/chart-bump@0.0.3
