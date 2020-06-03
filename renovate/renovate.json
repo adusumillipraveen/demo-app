@@ -1,0 +1,18 @@
+{
+  "regexManagers": [
+    {
+      "fileMatch": ["\\Chart.yaml|requirements.yaml$"],
+      "matchStrings": [
+        "repository:\n *repository: .*?\n *name: (?<depName>.*?)\n *version: (?<currentValue>.*)\n"
+      ],
+      "datasourceTemplate": "helm"
+    }
+  ],
+  "packageRules": [
+    {
+      "datasources": ["helm"],
+      "managers": ["regex"],
+      "registryUrls": ["https://hmctspublic.azurecr.io/helm/v1/repo/"]
+    }
+  ]
+}
