@@ -6,5 +6,5 @@
       },
       "enabled": true,
       "fileMatch": ["\\Chart.yaml|requirements.yaml$"]
-    },
+    }
 }
