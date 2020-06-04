@@ -2,7 +2,11 @@
   "helm-requirements": 
     {
       "enabled": true,
-      "fileMatch": ["\\Chart.yaml|requirements.yaml$"]
+      "fileMatch": ["\\Chart.yaml|requirements.yaml$"],
+      "aliases": {
+        "hmctspublic": "https://hmctspublic.azurecr.io/helm/v1/repo/",
+        "hmctsprivate": "https://hmctsprivate.azurecr.io/helm/v1/repo/"
+      }
     },
   "aliases": {
     "hmctspublic": "https://hmctspublic.azurecr.io/helm/v1/repo/",
