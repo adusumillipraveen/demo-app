@@ -7,9 +7,5 @@
         "hmctspublic": "https://hmctspublic.azurecr.io/helm/v1/repo/",
         "hmctsprivate": "https://hmctsprivate.azurecr.io/helm/v1/repo/"
       }
-    },
-  "aliases": {
-    "hmctspublic": "https://hmctspublic.azurecr.io/helm/v1/repo/",
-    "hmctsprivate": "https://hmctsprivate.azurecr.io/helm/v1/repo/"
-  }
+    }
 }
